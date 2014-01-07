@@ -5330,8 +5330,7 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-
-/*
+  /*
 CUSTOM CSS
 */
 
@@ -5354,4 +5353,8 @@ CUSTOM CSS
 #applet_images li {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.top-bar {
+  opacity: 0.95;
 }

@@ -1,0 +1,10 @@
+body {
+	background-image: url("../img/bg-full.jpg");
+}
+
+
+.under-construction {
+	margin-top: 2em;
+	font-family: "Lucida Bright", Georgia, serif;
+	font-size: 2.5em;
+}
