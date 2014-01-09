@@ -1,17 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lrrrr</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <script src="js/modernizr.js"></script>
-  </head>
+  <?php include("header.html") ?>
   <body>
-
-    <?php include("header.html") ?>
-
+    
+    <?php include("nav-bar.html") ?>
     <div class="row extra-margin-top" align="center">
       <div class="under-construction centered">
        Under construction</br></br>
