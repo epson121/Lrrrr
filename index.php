@@ -57,7 +57,7 @@
               <ul class="side-nav">
                 <li><a href="https://play.google.com/store/apps/details?id=kiwi.main&hl=en">Kiwi app - keep your credentials safe. School project.</a></li>
                 <li><a href="https://github.com/epson121/forumhr_mobile">Mobile version of forum.hr - I like this one</a></li>
-                <li><a href="https://github.com/epson121/howManyDrinks">Beer pitcher counter</a></li>
+                <li><a href="https://github.com/epson121/howManyDrinks">Beer pitcher counter - fork from @presjednik</a></li>
               </ul>
           </div>
       </div> <!--.story-->
