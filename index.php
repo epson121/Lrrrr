@@ -12,7 +12,7 @@
            <h2>Hello. My name is Luka.</h2>
            <p class="black-p">
               I consider myself a programming enthusiast, and an avid learner.</br>
-              I usually do Java/C#/C for school, but use other technologies for side-projects,
+              My usual stack is Java/C#/C (for school purposes), but I use other technologies for side-projects,
               so I decided to create a small portfolio of my work (ones that can be shown via web).  </br>
               As for my other stuff check out my <a href="http://github.com/epson121">github</a> profile, and my <a href="http://hr.linkedin.com/in/lurajcevi/">linkedIn page.</a></br>
               <em>Scroll for more.</em>
@@ -26,7 +26,7 @@
         <div class="float-left">
               <h2>I do web stuff</h2>
               <p class="black-p">
-                Web is everywhere. So in order to keep yourself "up-to-date" as a programmer, you must know it. Period.</br>
+                Web is everywhere. So in order to keep yourself "up-to-date" as a programmer, you must know it.</br>
                 Being more of a <em>backend developer</em> type (as you've already recognized by my "awesome" webpage), I usually do Ruby (more often) or PHP (less often), 
                 but it sure is fun to try something new and edgy (<a href="http://emberjs.com/">javascript frameworks</a>, 
                 <a href="http://foundation.zurb.com/">css frameworks</a> or <a href="http://en.wikipedia.org/wiki/Parallax_scrolling">scroll parallax</a> 
@@ -38,6 +38,7 @@
                 <li><a href="http://uconv.lrrrr.info">Convert your units for free!!</a></li>
                 <li><a href="http://alarm.lrrrr.info">Alarm Clock. It also shows you the wrong time. (I am so lazy...)</a></li>
                 <li><a href="http://bdconv.lrrrr.info">Binary-Decimal converter. For when you need one.. (like, never!)</a></li>
+                <li><a href="apps/circular_table/index.html">Circular table generator</a></li>
               </ul>
           </div>
       </div> <!--.story-->
@@ -49,10 +50,10 @@
         <div class="float-left">
             <h2>I am no stranger to android development</h2>
               <p class="black-p">
-                I've said it earlier, "web is everywhere". That means web is also on your phone or tablet or even your <a href="http://en.wikipedia.org/wiki/Phablet">phablet</a>, 
-                therefore you have to know some of it.</br>
-                I did some a while ago, and I liked it. First as a school project, and then in my spare time. </br>
-                I too, like every other developer, have a pool of ideas for "The next killer app" but, emm, I have no time to pursue them.. Ughh, yeah. that's the reason..
+                First as a school project, and then in my spare time. </br>
+                Like every other developer, I also have a pool of ideas for "The next killer app" but, emm, I have no time to pursue them.. Ughh, yeah. that's the reason..
+              </br>
+              My usual platform is Android but it would be fun to try others as well.
               </p>
               <ul class="side-nav">
                 <li><a href="https://play.google.com/store/apps/details?id=kiwi.main&hl=en">Kiwi app - keep your credentials safe. School project.</a></li>
@@ -92,7 +93,7 @@
                 Learning is cool. You can learn a lot on <a href="https://www.coursera.org/">Coursera</a>. I took about half a dozen courses and it was great.
                 From programming in SML and Racket in <a href="https://www.coursera.org/course/proglang">Programming Languages</a> to learning about 
                 <a href="https://www.coursera.org/course/dino101">dinosaurs</a> or <a href="https://www.coursera.org/course/bigbang">dark energy</a>, 
-                you can learn a whole lot about almost everything.
+                you can pick up a lot of knowledge about almost anything.
               </p>
           </div>
       </div> <!--.story-->
