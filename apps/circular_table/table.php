@@ -5,7 +5,7 @@
         $cols = floor($_POST['cols']);
 	
 		if (empty($rows) || empty($cols)) {
-		    echo "Empty fields and zeros are not allowed.";
+		    echo "Invalid input.";
 		} elseif ($rows < 0 || $cols < 0) {
 			echo "Values must be greater than 0.";
 		} else {
@@ -82,7 +82,7 @@
     	for ($i = 0; $i < $rows; $i++) {
     		$result .= '<tr>';
     		for ($j = 0; $j < $cols; $j++) {
-    			$result .= '<td>' . $res[$i][$j] . "</td>";
+    			$result .= '<td class="pulse-shrink">' . $res[$i][$j] . "</td>";
     		}
     		$result .= '</tr>';
     	}
