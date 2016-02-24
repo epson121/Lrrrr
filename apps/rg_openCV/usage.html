@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>OpenCV</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  <link rel="stylesheet" type="text/css" href="style/highlight/default.css"/>
+  <script src="js/highlight.pack.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Open<span class="logo_colour">CV</span></a></h1>
+          <h2><em>popular computer vision library<em></h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="usage.html">Korištenje</a></li>
+          <li><a href="examples.html">Primjeri</a></li>
+          <li><a href="links.html">Korisni linkovi</a></li>
+          <li><a href="download.html">Preuzimanje</a></li>
+          <li style="background:black;"><a href="../../graphics.php">Go Back</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>OpenCV novosti</h3>
+        <h4>Izdana verzija 2.4.8</h4>
+        <p>Početkom nove 2014. godine izdana je nova verzija OpenCV bibilioteke.<br /><a href="http://opencv.org/opencv-2-4-8.html">Više</a></p>
+        <p></p>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Instalacija</h1>
+        <p>
+          OpenCV biblioteka je podržana na gotovo svim platformama (Linux, MacOS, Windows) i moguće ju je koristiti na svakoj od njih. Instalacija je prilično jednostavna i jako dobro dokumentirana.</br></br>
+          <a href="http://docs.opencv.org/doc/tutorials/introduction/linux_install/linux_install.html#linux-installation">Instalacija za linux platformu</a></br>
+          <a href="http://docs.opencv.org/doc/tutorials/introduction/windows_install/windows_install.html#windows-installation">Instalacija za Windows platformu</a></br>
+          <a href="http://docs.opencv.org/doc/tutorials/introduction/ios_install/ios_install.html#ios-installation"> Instalacija za iOs</a></br></br>
+          Nakon instalacije, možemo započeti s korištenjem biblioteke. Slijedi par jednostavnih primjera korištenja (preuzetih sa službenih stranica).
+        </p>
+        <h1>Primjer 1</h1>
+        <h2>Prikaz slike</h2>
+        <p>
+          <pre><code>
+            import numpy as np
+            import cv2
+
+            # Load a color image in grayscale
+            # @args1 - image path
+            # @args2 - flag (way image should be read)
+            #    -  1 -> normal, coloured, no transparency
+            #    -  0 -> grayscale
+            #    - -1 -> normal, coloured + transparency
+            img = cv2.imread('sheep.png',1)
+
+            while(True):
+              # show the image
+              cv2.imshow('image',img)
+              # wait for the keypress (0 -> indefinitely)
+              key = cv2.waitKey(0)
+              # of key is ESC, break
+              if key == 27:
+                break
+            # destroy all windows (cleanup)
+            cv2.destroyAllWindows()
+          </code></pre>
+        </p>
+        <img src="img/1.png" /></br></br>
+        <p> Promjenom argumenta prilikom otvaranja slike s 1 na 0 <p>
+        <pre><code>
+            img = cv2.imread('sheep.png',0)
+        </code></pre>
+        <img src="img/2.png" />
+        <h1>Primjer 2</h1>
+        <h2>Prikaz videa s kamere</h2>
+        <p>
+          <pre><code>
+            import numpy as np
+            import cv2
+
+            # set the source of the video
+            # arg1 -> cameraId
+            cap = cv2.VideoCapture(0)
+
+            while(True):
+                # Capture frame-by-frame
+                ret, frame = cap.read()
+
+                # Our operations on the frame come here
+                # arg1 -> frame to change
+                # arg2 -> id of the effect 
+                #     -> 0 = no effect
+                #     -> cv2.COLOR_BGR2GRAY = grayscale image
+                res = cv2.cvtColor(frame, 0)
+
+                # Display the resulting frame
+                # arg1 -> window name
+                # arg2 -> frame to show
+                cv2.imshow('frame', res)
+                # if key is ESC exit loop
+                if cv2.waitKey(1) == 27:
+                    break
+
+            # When everything done, release the capture
+            cap.release()
+            cv2.destroyAllWindows()
+          </code></pre>
+        </p>
+        <p> Promjenom argumenta prilikom obrade pojedinog frame-a možemo stvoriti crno bijeli efekat nad kamerom. <p>
+        <pre><code>
+          res = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        </code></pre>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      Copyright &copy; Luka Rajčević, Računalna grafika (2014) | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a>
+    </div>
+  </div>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
